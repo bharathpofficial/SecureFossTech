@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ "/css/style.css" | absURL }}">
+    </head>
+    <body>
+        {{ partial "menu_bar.html" . }}
+
+        <div class="content">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </body>
+</html>

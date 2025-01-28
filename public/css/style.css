@@ -1,0 +1,40 @@
+.responsive-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px; /* Adjust the value for more or less rounded edges */
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Optional: Add a background color */
+}
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+}
+
+.menu-bar li {
+    display: inline;
+    margin-left: 30px;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: inherit;
+    font-family: monospace;
+}
+
+.menu-bar h1 {
+  font-size: 1.5em;
+  font-family: monospace;
+}

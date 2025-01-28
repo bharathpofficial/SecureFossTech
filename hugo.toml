@@ -1,3 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+[markup] 
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe = true
+        
+    [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
