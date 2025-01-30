@@ -9,7 +9,7 @@ draft = false
         <h1>Open Source</h1>
     </div>
     <div class="hero-image">
-        <img src="/img/panda_minimal_landing.png" alt="Panda with Computer" >
+        <img src="{{ "/img/panda_minimal_landing.png" | absURL }}" alt="Panda with Computer" >
     </div>
 </div>
 

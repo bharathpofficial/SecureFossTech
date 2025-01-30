@@ -1,6 +1,7 @@
 baseURL = 'https://bharathpofficial.github.io/SecureFossTech/'
 languageCode = 'en-us'
 title = 'Secure Foss Tech'
+relativeURLs = true
 
 [params]
 name  = 'Bharath P'

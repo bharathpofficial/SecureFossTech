@@ -1,12 +1,12 @@
 <div class="menu-bar">
-    <a href="/"> 
-      <img src="/img/Girrafe.png">
-      <h1>Secure Foss Tech</h1>
-    </a>
-  <nav>
-      <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/posts" >Blogs</a></li>
-      </ul>
-  </nav>
+  <a href="{{ "/" | absURL }}"> 
+    <img src="{{ "/img/Girrafe.png" | absURL }}" alt="Site Logo">
+    <h1>Secure Foss Tech</h1>
+  </a>
+<nav>
+    <ul>
+      <li><a href="{{ "/about/" | absURL }}">About</a></li>
+      <li><a href="{{ "/posts/" | absURL }}">Blogs</a></li>
+    </ul>
+</nav>
 </div>
