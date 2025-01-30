@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Secure Foss Tech</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Secure Foss Tech</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2025 08:46:20 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shoutouts volume 1</title>
+      <link>http://localhost:1313/posts/shoutouts_vol1/</link>
+      <pubDate>Thu, 30 Jan 2025 08:46:20 +0530</pubDate>
+      <guid>http://localhost:1313/posts/shoutouts_vol1/</guid>
+      <description>Open Source websites and platforms are crucial in promoting collaborative software development and knowledge sharing. Here&amp;rsquo;s a comprehensive shoutout to the most notable FOSS and Open Source content platforms:&#xA;Project Hosting Sites GitHub: Hosts over 1.7 million repositories, enabling public and private open-source projects [1] SourceForge: The &amp;ldquo;mother lode&amp;rdquo; for open source projects, serving over 2 million downloads daily[1] Google Cloud Source Repositories: Allows companies to create unlimited private Git repositories[1] Open Source Software Directories AlternativeTo: Provides open source alternatives to commercial software[1] FossHub: Offers free and secure software downloads with a clean, user-friendly interface[1] F-Droid: Specialized platform for free and open-source Android applications[1] Softpedia: Comprehensive collection of free software for multiple platforms[1] Community and Advocacy Platforms Open Source Initiative (OSI): Educational platform advocating for collaborative development[1] Free Software Foundation: Maintained site with extensive software links and open-source philosophy[1] FOSS United: An Indian organization promoting open-source principles [4] Specialized Open Source Collections UNESCO FOSS Portal: Promotes free and open-source software as a development instrument[7] Android FOSS GitHub Repository: Comprehensive list of Free and Open Source Software for Android, focusing on privacy and freedom [8] Content Management Systems (CMS) WordPress: Dominates with 64% market share among open-source CMS platforms [5] Joomla: Versatile CMS for various website types [5] Typo3: PHP-based CMS with advanced marketing and content management features [3] Emerging Platforms FossID: Software composition analysis tool for managing open-source software risks [9] Awesome Open Source Systems: Curated list of free open-source systems [10] Pro Tip: These platforms not only host code but also embody the collaborative philosophy of open-source - transparency, community-driven innovation, and shared knowledge.</description>
+    </item>
+  </channel>
+</rss>

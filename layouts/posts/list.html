@@ -1,0 +1,36 @@
+{{ define "main" }}
+    <h1 class="posts-list-heading">All Posts</h1>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const postCards = document.querySelectorAll('.post-card h2');
+
+            postCards.forEach(card => {
+                card.addEventListener('mouseenter', function(event) {
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'tooltip';
+                    tooltip.innerText = card.innerText;
+                    document.body.appendChild(tooltip);
+
+                    const rect = card.getBoundingClientRect();
+                    tooltip.style.left = `${rect.left}px`;
+                    tooltip.style.top = `${rect.bottom + window.scrollY}px`;
+
+                    card.addEventListener('mouseleave', function() {
+                        document.body.removeChild(tooltip);
+                    }, { once: true });
+                });
+            });
+        });
+    </script>
+
+    <div class="posts-list-container">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="post-card">
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Date.Format "January 2, 2006" }}</p>
+            <p>{{ .Description }}</p>
+        </a>
+        {{ end }}
+    </div>
+    {{ end }}
