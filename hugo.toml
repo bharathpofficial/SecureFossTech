@@ -1,6 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://securefoss.tech'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Secure Foss Tech'
+
+[params]
+name  = 'Bharath P'
 
 [markup] 
     [markup.goldmark]

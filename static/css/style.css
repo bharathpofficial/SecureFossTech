@@ -1,10 +1,39 @@
-.responsive-img {
+.content {
+    font-size: 1.6rem; /* Set the base font size to 16px */
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.hero-section img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    height: auto;
-    border-radius: 15px; /* Adjust the value for more or less rounded edges */
+    width: 100%;
+    height: calc(100% - 20px); /* Adjust height to account for padding */
+    object-fit: cover;
+    filter: brightness(50%); /* Make the image dull */
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Smooth transition for the transform property */
+}
+
+.hero-section:hover img {
+    transform: scale(1.05) translate(10px, 10px); /* Slightly enlarge the image and move it in the opposite direction on hover */
+    border-radius: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 8rem;
+    color: white;
+    z-index: 1; /* Ensure the text is on top of the image */
 }
 
 .menu-bar {
@@ -12,8 +41,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f5f5f5; /* Optional: Add a background color */
+    background-color: #f5f5f5; 
 }
+ 
 .menu-bar ul {
     list-style-type: none;
     margin: 0 auto;
@@ -23,18 +53,214 @@
     display: flex;
 }
 
+
 .menu-bar li {
     display: inline;
     margin-left: 30px;
 }
 
 .menu-bar a {
+    display: flex;
     text-decoration: none;
     color: inherit;
     font-family: monospace;
+    font-size: 2rem; 
+    align-items: center;
 }
 
-.menu-bar h1 {
-  font-size: 1.5em;
-  font-family: monospace;
+.menu-bar a img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.menu-bar a h1 {
+    font-size: 2rem; /* Increase the font size for a reasonable size in 100% zoom */
+    font-family: monospace;
+    margin: 0;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-section ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.main-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-page h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-page h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.main-page p {
+    margin-bottom: 20px;
+}
+
+.main-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.main-page ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Provide padding from top to the entire box of the footer */
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.posts-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-left: 5%;
+    margin-left: 5%;
+}
+.post-card {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color:antiquewhite;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10%;
+}
+.post-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.post-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.post-card p {
+    margin: 0;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.posts-list-heading {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.posts-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.posts-section h1, .posts-section h2, .posts-section h3, .posts-section h4, .posts-section h5, .posts-section h6 {
+    color: #333;
+    margin-top: 0;
+}
+
+.post-view-head {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.posts-section-citations {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+}
+
+.posts-section-citations p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.tooltip {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    white-space: nowrap;
 }
